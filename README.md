@@ -5,9 +5,9 @@
 |---|---|---|---|---|---|
 |일정 생성|`POST`|/api/schedules|요청 body|등록 정보|200:OK, 404:NOT FOUND|
 |전체 일정 조회|`GET`|/api/schedules|요청 param|다건 응답 정보|200:OK, 404:NOT FOUND|
-|선택 일정 조회|`GET`|/api/schedule/{schedule_id}|요청 param|단건 응답 정보|200:OK, 404:NOT FOUND|
-|선택 일정 수정|`PUT`|/api/schedule/{schedule_id}|요청 body|수정 정보|200:OK, 404:NOT FOUND|
-|선택 일정 삭제|`DELET`|/api/schedule/{schedule_id}|요청 param|삭제 정보|200:OK, 404:NOT FOUND|
+|선택 일정 조회|`GET`|/api/schedules/{schedule_id}|요청 param|단건 응답 정보|200:OK, 404:NOT FOUND|
+|선택 일정 수정|`PUT`|/api/schedules/{schedule_id}|요청 body|수정 정보|200:OK, 404:NOT FOUND|
+|선택 일정 삭제|`DELET`|/api/schedules/{schedule_id}|요청 param|삭제 정보|200:OK, 404:NOT FOUND|
 
 ### 일정 등록
 - POST
