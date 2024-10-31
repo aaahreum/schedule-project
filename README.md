@@ -59,7 +59,7 @@
 ## ERD
 
 
-![Copy of schedule-project (2)](https://github.com/user-attachments/assets/d2552b90-726c-402e-9163-c6375dbd3e4f)
+![Copy of schedule-project (3)](https://github.com/user-attachments/assets/749bbb93-725f-46b7-8fef-ee1b7bc39507)
 
 
 
@@ -70,16 +70,37 @@
 
 
 - 테이블 생성
-
+```
+CREATE TABLE Schedule (
+  schedule_id	int	NOT NULL PRIMARY KEY AUTO_INCREMENT
+	user_id	varchar(45)	NOT NULL,
+	title	varchar(45)	NULL,
+	content	varchar(200)	NULL,
+	password	varchar(45)	NOT NULL,
+	created_date	datetime	NULL,
+	modify_date	datetime	NULL
+);
+```
 - 일정 생성
-  
+```
+INSERT INTO Schedule (user_id, title, content, password, created_date, modify_date)
+VALUES ("abc", "과제 검사", "금요일까지", "1234", current_timestamp(), current_timestamp());
+``` 
 - 전체 일정 조회
-  
+```
+SELECT * FROM Schedule;
+```  
 - 선택 일정 조회
-  
+```
+SELECT * FROM Schedule WHERE id = 1;
+```    
 - 선택 일정 수정
-  
+```
+UPDATE Schedule content = "금요일까지 무조건", update_date = current_timestamp() WHERE id = 2;
+```  
 - 선택 일정 삭제
-
+```
+DELETE FROM Schedule WHERE id = 1;
+```
 
 
