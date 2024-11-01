@@ -96,7 +96,7 @@ SELECT * FROM Schedule WHERE id = 1;
 ```    
 - 선택 일정 수정
 ```
-UPDATE Schedule content = "금요일까지 무조건", update_date = current_timestamp() WHERE id = 2;
+UPDATE Schedule SET content = "금요일까지 무조건", update_date = current_timestamp() WHERE id = 2;
 ```  
 - 선택 일정 삭제
 ```
