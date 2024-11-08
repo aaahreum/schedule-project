@@ -23,10 +23,10 @@ public class Schedule {
 
     }
 
-    public void update(ScheduleRequestDto requestDto) {
-        this.title = requestDto.getTitle();
-        this.contents = requestDto.getContents();
-        this.name = requestDto.getName();
+    public void update(String title, String contents, String name) {
+        this.title = title;
+        this.contents = contents;
+        this.name = name;
     }
 
 

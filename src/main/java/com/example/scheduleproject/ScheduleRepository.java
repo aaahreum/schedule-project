@@ -26,4 +26,12 @@ public class ScheduleRepository {
     public Collection<Schedule> findAll() {
         return scheduleList.values();
     }
+
+    public Schedule getSchedule(Long id) {
+        return scheduleList.get(id);
+    }
+
+    public void deleteSchedule(Long id) {
+        scheduleList.remove(id);
+    }
 }
